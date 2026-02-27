@@ -22,13 +22,6 @@ public class MathOperator extends AFD {
                 code.next();
                 return new Token("DIVIDE", "/");
 
-            case '(':
-                code.next();
-                return new Token("AP", "(");
-
-            case ')':
-                code.next();
-                return new Token("FP", ")");
 
             case CharacterIterator.DONE:
                 return new Token("EOF", "$");
